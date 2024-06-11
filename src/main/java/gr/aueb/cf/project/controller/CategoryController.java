@@ -54,7 +54,7 @@ public class  CategoryController {
     public ResponseEntity<ApiResponse> deleteCategory(@PathVariable("categoryId") Integer categoryID) {
         // Check to see if the category exists.
         if (Objects.nonNull(categoryService.readCategory(categoryID))) {
-            // If the category exists then update it.
+            // If the category exists then delete it.
             categoryService.deleteById(categoryID);
             return new ResponseEntity<ApiResponse>(new ApiResponse(true, "category is deleted"), HttpStatus.OK);
         }

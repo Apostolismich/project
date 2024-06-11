@@ -9,6 +9,7 @@ public class ProductDto {
     private @NotNull double price;
     private @NotNull String description;
     private @NotNull Integer categoryId;
+    private @NotNull String customerName;
 
     public ProductDto() {
     }
@@ -59,5 +60,13 @@ public class ProductDto {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 }

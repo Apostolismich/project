@@ -61,4 +61,7 @@ public class ProductService {
         product.setPrice(productDto.getPrice());
         productRepository.save(product);
     }
+
+    public void deleteProduct(ProductDto productDto, Integer productId) {
+    }
 }
